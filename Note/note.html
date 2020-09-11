@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getSavedNotes()">
+    
+    <div class="container" id='create_note_id'>
+
+        <div class="note_title">
+            <input type="text" id="note_title" placeholder="Title"> <br> <br>
+        </div>
+
+        <div class="note_body">
+            <textarea name="" id="note_body" cols="30" rows="6" placeholder="Body"></textarea> <br> <br>
+        </div>
+
+        <div class="note_summary">
+            <textarea name="" id="note_summary" cols="30" rows="5" placeholder="Summary"></textarea> <br> <br>
+        </div>
+        
+        <div class="submit">
+           <!-- <button type="button" onclick="addNote()">Add Note</button> -->
+           <button type='button' id='addNote_id'>Add Note</button>
+        </div>
+    </div>
+
+    <div id='saved_notes_id'></div>
+
+    <script src="note.js"></script>
+</body>
+</html>
